@@ -1,0 +1,138 @@
+:root {
+  --font1: 36px;
+  --font2: 114px;
+  --font3: 24px;
+  --color1: #1da1f2;
+  --color2: #14171a;
+  --color3: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: var(--font1);
+  line-height: 1;
+  transition: 0.5s;
+}
+
+#body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  background: #1da1f2;
+}
+
+.footer1 {
+  color: var(--color3);
+  font-size: var(--font3);
+  font-weight: light;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.footer2 {
+  color: var(--color3);
+  font-size: var(--font3);
+  font-weight: light;
+  text-align: center;
+}
+
+#wrapper {
+  width: 30%;
+  color: var(--color3);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--color2);
+  border-radius: var(--font1);
+  box-shadow: blue 0px 0px 0px 2px inset, var(--color2) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px, var(--color2) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px, var(--color2) 30px -30px 0px -3px,
+    rgb(255, 156, 85) 30px -30px, var(--color2) 40px -40px 0px -3px,
+    rgb(255, 85, 85) 40px -40px;
+}
+
+h1 {
+  font-size: var(--font2);
+  padding-bottom: 3%;
+  padding-top: 3%;
+  color: var(--color1);
+  letter-spacing: -10px;
+}
+
+#quote-box {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#quote-box .quote-text {
+  padding-top: 5%;
+  text-align: center;
+  line-height: 120%;
+}
+
+#quote-box .quote-text .quote-symbol {
+  text-align: left;
+  width: 4%;
+  height: 4%;
+  filter: invert(100%);
+}
+
+#quote-box .quote-text .quote-symbol2 {
+  text-align: left;
+  width: 4%;
+  height: 4%;
+  filter: invert(100%);
+  transform: rotate(180deg);
+}
+
+#quote-box .quote-author {
+  text-align: right;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-style: italic;
+}
+
+#quote-box .buttons {
+  text-align: right;
+  padding-bottom: 5%;
+}
+
+#tweet-quote {
+  display: block;
+  margin-left: auto;
+  margin-right: 62px;
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+#quote-box .buttons .button {
+  border: none;
+  padding: 5px 10px;
+  font-weight: bolder;
+  border-radius: 20px;
+  color: var(--color1);
+  background: none;
+}
+
+#quote-box .buttons .button:hover {
+  color: var(--color2);
+  background-color: var(--color3);
+}
+
+@media screen and (max-width: 1050px) {
+  :root {
+    --font1: 24px;
+    --font2: 72px;
+    --font3: 12px;
+  }
+
+  #wrapper {
+    width: 340px;
+  }
+}
