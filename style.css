@@ -1,0 +1,137 @@
+:root {
+  --font1: 36px;
+  --font2: 114px;
+  --font3: 24px;
+  --color1: #edf4f2;
+  --color2: #31473a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: var(--font1);
+  line-height: 1;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  background: var(--color1);
+}
+
+.footer1 {
+  color: white;
+  font-size: var(--font3);
+  font-weight: light;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.footer2 {
+  color: white;
+  font-size: var(--font3);
+  font-weight: lighter;
+  padding-top: 5%;
+  text-align: center;
+}
+
+#wrapper {
+  width: 500px;
+  color: white;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: var(--color2);
+  border-radius: var(--font1);
+  box-shadow: 10px 10px 0px 0px white;
+}
+
+h1 {
+  font-size: var(--font2);
+  padding-bottom: 3%;
+  padding-top: 3%;
+  color: var(--color1);
+  transition: 0.2s;
+}
+
+h1:hover {
+  color: transparent;
+  transition: 0.2s;
+}
+
+#quote-box {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#quote-box .quote-text {
+  padding-top: 5%;
+  text-align: center;
+}
+
+#quote-box .quote-text .quote-symbol {
+  text-align: left;
+  width: 10%;
+  height: 10%;
+  filter: invert(100%);
+}
+
+#quote-box .quote-text .quote-symbol2 {
+  text-align: left;
+  width: 10%;
+  height: 10%;
+  filter: invert(100%);
+  transform: rotate(180deg);
+}
+
+#quote-box .quote-author {
+  text-align: right;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-style: italic;
+}
+
+#quote-box .buttons {
+  text-align: right;
+  padding-bottom: 5%;
+}
+
+#tweet-quote {
+  padding: 0% 4%;
+}
+
+#quote-box .buttons .button {
+  border: none;
+  padding: 5px 10px;
+  font-weight: bolder;
+  border-radius: 20px;
+  border: 3px solid var(--color1);
+  color: var(--color1);
+  background: none;
+  border-color: var(--color1);
+  transition: 0.2s;
+}
+
+#quote-box .buttons .button:hover {
+  transition: 0.2s;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+
+@media screen and (max-width: 1050px) {
+  :root {
+    --font1: 24px;
+    --font2: 72px;
+    --font3: 12px;
+  }
+
+  #wrapper {
+    width: 340px;
+  }
+}
