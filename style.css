@@ -42,13 +42,13 @@
 }
 
 #wrapper {
-  width: 80%;
+  width: 70%;
   color: var(--color3);
-  width: 80%;
+  width: 30%;
   justify-content: center;
   align-items: center;
   background: var(--color2);
-  box-shadow: 0 0 40px 4px var(--color2);
+  box-shadow: 0 0 180px 4px var(--color2);
 }
 
 h1 {
@@ -72,15 +72,15 @@ h1 {
 
 #quote-box .quote-text .quote-symbol {
   text-align: left;
-  width: 4%;
-  height: 4%;
+  width: 10%;
+  height: 10%;
   filter: invert(100%);
 }
 
 #quote-box .quote-text .quote-symbol2 {
   text-align: left;
-  width: 4%;
-  height: 4%;
+  width: 10%;
+  height: 10%;
   filter: invert(100%);
   transform: rotate(180deg);
 }
